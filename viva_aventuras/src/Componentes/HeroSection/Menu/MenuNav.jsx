@@ -1,7 +1,9 @@
+import style from './MenuNav.module.css'
+
 function MenuNav() {
     return ( 
-        <nav>
-            
+        <nav className={style.navBar}>
+            <div></div>
         </nav>
      );
 }

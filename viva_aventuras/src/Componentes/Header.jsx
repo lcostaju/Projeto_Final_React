@@ -1,7 +1,9 @@
+import MenuNav from "./HeroSection/Menu/MenuNav";
+
 function Header(){
     return(
         <header>
-            <p>header</p>
+            <MenuNav/>
         </header>
     )
 }

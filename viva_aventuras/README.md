@@ -1,12 +1,53 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Guia de Boas Práticas para Desenvolvimento Colaborativo em React
 
-Currently, two official plugins are available:
+## 1. Controle de Versão
+- Utilize o Git para versionamento do código.
+- Cada desenvolvedor deve criar uma branch para suas tarefas (ex: `feature/Header`).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 2. Estrutura e Nomeação
+- Componentes e pastas de componentes em PascalCase (ex: `UserProfile/`, `UserProfile.jsx`).
+- Arquivos de estilos podem seguir o nome do componente (ex: `UserProfile.module.css`).
 
-## Expanding the ESLint configuration
+## 3. Fluxo de Trabalho
+- Antes de iniciar, atualize sua branch local com a principal (`develop`).
+  
+  Comandos recomendados para atualizar sua branch feature com a develop:
+  ```bash
+  git checkout develop
+  git pull origin develop
+  git checkout sua-feature
+  git merge develop
+  # Resolva conflitos se houver, depois:
+  git add .
+  git commit -m "Resolve conflitos com develop"
+  git push origin sua-feature
+  ```
+- Ao finalizar um componente, abra um Pull Request (PR) para revisão.
+- Realize revisões de código em todos os PRs.
+- Resolva conflitos em conjunto, se necessário.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 4. Comunicação
+- Mantenha uma lista clara de responsáveis por cada componente.
+- Comunique mudanças importantes ao time.
+
+## 5. Boas Práticas de Código
+- Escreva código limpo, com nomes descritivos.
+- Evite duplicidade de código.
+- Utilize comentários apenas quando necessário para explicar regras de negócio.
+
+## 6. Organização dos Componentes
+Exemplo de estrutura:
+```
+src/
+  components/
+    Header/
+      Header.jsx
+      Header.module.css
+    UserProfile/
+      UserProfile.jsx
+      UserProfile.module.css
+```
+
+---
+Siga este guia para garantir um desenvolvimento colaborativo eficiente e organizado!

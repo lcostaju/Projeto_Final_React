@@ -10,8 +10,7 @@ function Main(){
     return(
         <main>
         <NossasExperiencias/>
-        <MontainSection/>
-            <FormSection />
+        <FormSection />
 
         </main>
     )

@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+:root {
+    --vermelho-principal: #F44C34;
+    --laranja-secundario: #ED7E4B;
+}
+
+.hero {
+    position: relative;
+    background-image: url('/capa.jpeg');
+    /* ajuste o caminho conforme necessário */
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1rem;
+    color: #fff;
+    overflow: hidden;
+    /* evita que o ::before transborde */
+}
+
+/* Pseudo-elemento para overlay */
+.hero::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+    /* filtro preto suave */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: var(--largura-maxima-secao);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.textos h1 {
+    /* font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+  max-width: 90vw; */
+    color: #FFF;
+
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px;
+    /* 100% */
+}
+
+.viva {
+    color: var(--vermelho-principal);
+}
+
+
+.ctaBox {
+    background: rgba(217, 217, 217, 0.50);
+    width: 442px;
+    height: 266px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    align-items: center;
+    text-align: center;
+}
+
+.ctaBox>p {
+    color: #000;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+    margin-top: 45px;
+    /* 140% */
+}
+
+.ctaBtn {
+    /* margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background: linear-gradient(to right, #F44C34, #ED7E4B);
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    padding: 0.75rem 1.2rem;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer; */
+
+    display: inline-flex;
+    height: 52px;
+    padding: 15px 22.245px 16px 69px;
+    justify-content: flex-end;
+    align-items: flex-start;
+    gap: 32px;
+    flex-shrink: 0;
+    border-radius: 8px;
+    border: 0px solid #E5E7EB;
+    background: linear-gradient(90deg, #F44C34 0%, #ED7E4B 100%);
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.10), 0px 1px 3px 0px rgba(0, 0, 0, 0.10);
+    margin-top: 48px;
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 700;
+
+}
+
+.ctaBtn img {
+    width: 20px;
+    height: 20px;
+}
+
+.blocoTexto {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+
+.alturas {
+    color: var(--vermelho-principal);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    font-size: 85px;
+    font-weight: bold;
+    line-height: 36px;
+
+}
+
+.aventuraNas {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 62px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 96px;
+}
+
+
+@media (max-width: 768px) {
+    .hero-content {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+
+    .blocoTexto {
+        /* flex-direction: column; */
+        align-items: flex-start;
+    }
+
+    .textos h1 {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .aventuraNas {
+        font-size: 32px;
+        line-height: 40px;
+    }
+
+    .alturas {
+        /* writing-mode: horizontal-tb; */
+        writing-mode: vertical-rl;
+        font-size: 38px;
+        line-height: 40px;
+        margin-top: 1rem;
+    }
+
+    .ctaBox {
+        width: 100%;
+    }
+
+    .ctaBox > p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+
+    .ctaBtn {
+        font-size: 16px;
+        padding: 12px 20px;
+        gap: 16px;
+    }
+
+    .ctaBtn img {
+        width: 18px;
+        height: 18px;
+    }
+}

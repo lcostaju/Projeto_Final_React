@@ -1,0 +1,58 @@
+.cardExperiencias {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* distribui topo e base */
+  align-items: center;
+  text-align: center;
+  width: 240px;
+  height: 230px; /* altura fixa e igual para todos */
+  padding: 24px 24px 20px 24px;
+  border-radius: 12px;
+  background: #F6F6F6;
+  border: 1px solid #E5E5E5;
+  transition: transform 0.3s ease;
+}
+
+.cardExperiencias:hover {
+  transform: translateY(-4px);
+}
+
+.cardExperiencias > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 9999px;
+  background: #F44C34;
+  margin-bottom: 15px;
+}
+
+.cardExperiencias > div img {
+  width: 24px;
+  height: 24px;
+}
+
+.cardExperiencias h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin: 0 0 10px 0;
+}
+
+.cardExperiencias p {
+  font-size: 14px;
+  color: #4B5563;
+  line-height: 1.4;
+  margin: 0;
+  max-height: 56px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media (max-width: 768px) {
+  .cardExperiencias {
+    width: 100%;
+    max-width: 320px;
+  }
+}

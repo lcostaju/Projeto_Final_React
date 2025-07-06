@@ -158,7 +158,7 @@
     }
 
     .blocoTexto {
-        flex-direction: column;
+        /* flex-direction: column; */
         align-items: flex-start;
     }
 
@@ -173,8 +173,9 @@
     }
 
     .alturas {
-        writing-mode: horizontal-tb;
-        font-size: 32px;
+        /* writing-mode: horizontal-tb; */
+        writing-mode: vertical-rl;
+        font-size: 38px;
         line-height: 40px;
         margin-top: 1rem;
     }

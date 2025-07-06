@@ -1,8 +1,10 @@
+import FormSection from "./Formulario/FormSection";
+
 function Main(){
 
     return(
         <main>
-        <p>main</p>
+            <FormSection />
         </main>
     )
     

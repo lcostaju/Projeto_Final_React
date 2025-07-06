@@ -1,23 +1,33 @@
 .formSection {
   position: relative;
-  width: 1440px;
-  height: 800px;
-  margin: 0 auto;
-  background-image: url('/backgroundFormSection.png'), linear-gradient(#2A2424, #2A2424);
-  background-position: -4.344px -653.402px, center;
-  background-size: 100% 240%, cover;
-  background-repeat: no-repeat, no-repeat;
-  background-color: lightgray;
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  background-image: url('/backgroundFormSection.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #2A2424;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
 }
 
+.formSection::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: 1;
+  pointer-events: none;
+}
+
 .overlay {
   width: 100%;
   height: 100%;
-  background: rgba(0,0,0,0.5);
+  position: relative;
+  z-index: 2;
   display: flex;
   align-items: center;
   justify-content: space-between;

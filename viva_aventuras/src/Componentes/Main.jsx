@@ -1,8 +1,10 @@
+import NossasExperiencias from "./NossasEsperiencias/NossasExperiencias";
+
 function Main(){
 
     return(
         <main>
-        <p>main</p>
+        <NossasExperiencias/>
         </main>
     )
     

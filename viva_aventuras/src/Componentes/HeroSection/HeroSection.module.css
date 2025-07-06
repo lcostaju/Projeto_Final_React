@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+:root {
+  --vermelho-principal: #F44C34;
+  --laranja-secundario: #ED7E4B;
+}
+
+.hero {
+  position: relative;
+  background-image: url('/capa.jpeg'); /* ajuste o caminho conforme necessário */
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  color: #fff;
+  overflow: hidden; /* evita que o ::before transborde */
+}
+
+/* Pseudo-elemento para overlay */
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* filtro preto suave */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: var(--largura-maxima-secao);
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2rem;
+}
+
+.textos h1 {
+  /* font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: white;
+  max-width: 90vw; */
+  color: #FFF;
+
+font-size: 96px;
+font-style: normal;
+font-weight: 400;
+line-height: 96px; /* 100% */
+}
+
+.viva {
+  color: var(--vermelho-principal);
+}
+
+
+.ctaBox {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 1rem;
+  padding: 1.5rem;
+  color: #000;
+  max-width: 340px;
+  font-size: 1rem;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.ctaBtn {
+  margin-top: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: linear-gradient(to right, #F44C34, #ED7E4B);
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  padding: 0.75rem 1.2rem;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.ctaBtn img {
+  width: 20px;
+  height: 20px;
+}
+
+.blocoTexto {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+
+.alturas {
+  color: var(--vermelho-principal);
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  font-size: 85px;
+  font-weight: bold;
+  line-height: 36px;
+  
+}
+
+.aventuraNas{
+    color: #FFF;
+font-family: Inter;
+font-size: 62px;
+font-style: normal;
+font-weight: 400;
+line-height: 96px;
+}
+
+
+@media (max-width: 768px) {
+  .hero-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+  }
+
+  .textos h1 {
+    font-size: 2rem;
+  }
+
+  .alturas {
+    font-size: 2rem;
+  }
+
+  .ctaBox {
+    width: 100%;
+  }
+}

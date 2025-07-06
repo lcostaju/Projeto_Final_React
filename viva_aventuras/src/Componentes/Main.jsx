@@ -1,5 +1,9 @@
+
 import MontainSection from "./MontainSection/MontainSection";
 import NossasExperiencias from "./NossasEsperiencias/NossasExperiencias";
+
+import FormSection from "./Formulario/FormSection";
+
 
 function Main(){
 
@@ -7,6 +11,8 @@ function Main(){
         <main>
         <NossasExperiencias/>
         <MontainSection/>
+            <FormSection />
+
         </main>
     )
     

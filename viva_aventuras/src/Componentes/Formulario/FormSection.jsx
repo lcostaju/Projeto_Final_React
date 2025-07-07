@@ -4,7 +4,7 @@ import Formulario from './Formulario';
 
 function FormSection() {
   return (
-    <section className={styles.formSection}>
+    <section className={styles.formSection} id='contato'>
       <div className={styles.overlay}>
         <FormInfo />
         <Formulario />

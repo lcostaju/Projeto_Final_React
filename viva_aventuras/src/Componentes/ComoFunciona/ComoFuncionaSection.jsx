@@ -2,7 +2,7 @@ import styles from './ComoFuncionaSection.module.css';
 
 function ComoFuncionaSection() {
   return (
-    <section className={styles.comoFunciona}>
+    <section className={styles.comoFunciona} id='comoFunciona'>
       <div className={styles.container}>
         {/* Coluna 1: Como funciona */}
         <div className={styles.coluna}>

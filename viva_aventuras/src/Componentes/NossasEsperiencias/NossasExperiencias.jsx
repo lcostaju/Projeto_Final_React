@@ -9,7 +9,7 @@ function NossasExperiencias() {
         { icon: '/icon-cachoeira.svg', titulo: 'Trilhas & Cachoeiras', texto: 'Vivencie trilhas e banhos de cachoeira na Serra da Canastra' }
     ];
     return ( 
-        <section>
+        <section id='nossasExp'>
             <div className={style.containerNossasExp}>
                 <h2>Nossas Experiências</h2>
                 <div className={style.containerCardNossasExperiencias}>

@@ -1,0 +1,103 @@
+.comoFunciona {
+    background: #FFEFEF;
+    padding: 4rem 1rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: space-between;
+}
+
+.coluna {
+    flex: 1;
+    min-width: 280px;
+}
+
+.coluna h2 {
+    color: #DC2626;
+    font-size: 24px;
+    margin-bottom: 1.5rem;
+}
+
+/* Lista ordenada de etapas */
+.etapas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    counter-reset: etapa;
+}
+
+.etapas li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.numero {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    padding: 9px 0px 10px 0px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    background: #DC2626;
+    color: white;
+    font-weight: bold;
+    flex-shrink: 0;
+    font-size: 16px;
+}
+
+.etapas li h3 {
+    color: #DC2626;
+    font-size: 16px;
+    margin: 0;
+}
+
+.etapas li p {
+    font-size: 16px;
+    color: #000;
+    margin: 0.25rem 0 0 0;
+}
+
+/* Diferenciais com ícones */
+.diferenciais {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.diferenciais li {
+    display: flex;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.diferenciais li img {
+    width: 25px;
+    /* height: 40px; */
+    object-fit: contain;
+}
+
+.diferenciais li p {
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

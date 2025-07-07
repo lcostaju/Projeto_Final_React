@@ -25,7 +25,7 @@ function Footer() {
                             loading="lazy"
                             allowFullScreen
                             referrerPolicy="no-referrer-when-downgrade"
-                        iframe/>
+                            iframe />
                         <p>
                             As atividades acontecem em meio à natureza, Serra da Canastra, MG.
                         </p>
@@ -35,14 +35,14 @@ function Footer() {
                     <div className={style.coluna}>
                         <nav className={style.menu}>
                             <span>Menu</span>
-                            <a href="#inicio">Início</a>
-                            <a href="#servicos">Serviços</a>
-                            <a href="#como-funciona">Como Funciona</a>
-                            <a href="#experiencias">Experiências</a>
-                            <a href="#autoridade">Autoridade</a>
-                            <a href="#galeria">Galeria</a>
-                            <a href="#contato">Contato</a>
-                            <a href="#duvidas">Dúvidas</a>
+                            <a href="#inicio"  >Início</a>
+                            <a href="#nossasExp" >Nossas Experiências</a>
+                            <a href="#comoFunciona" >Como Funciona</a>
+                            <a href="#experiencias" >Experiências</a>
+                            <a href="#autoridade" >Quem somos</a>
+                            <a href="#galeria" >Galeria</a>
+                            <a href="#contato" >Contato</a>
+                            <a href="#duvidas" >Dúvidas</a>
                         </nav>
                     </div>
                 </div>

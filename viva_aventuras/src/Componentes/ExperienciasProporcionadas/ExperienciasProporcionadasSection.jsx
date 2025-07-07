@@ -40,7 +40,7 @@ function ExperienciasProporcionadasSection() {
     ];
 
     return (
-        <section className={styles.section}>
+        <section className={styles.section} id='experiencias'>
             <h2 className={styles.titulo}>
                 <span className={styles.destaque}>Experiências</span> Proporcionadas
             </h2>

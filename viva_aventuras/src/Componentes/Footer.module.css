@@ -1,5 +1,5 @@
 .classFooter {
-    background-color: #0f0f0f;
+    background: #0A0A0A;
     color: #fff;
     padding: 3rem 1rem 2rem;
 }
@@ -24,11 +24,16 @@
 .logo {
     width: 100px;
     height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .redes {
     display: flex;
     gap: 0.75rem;
+    justify-content: center;
+    margin-top: 0.5rem;
 }
 
 .redes img {
@@ -54,6 +59,7 @@
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
+    text-align: center;
 }
 
 .menu span {

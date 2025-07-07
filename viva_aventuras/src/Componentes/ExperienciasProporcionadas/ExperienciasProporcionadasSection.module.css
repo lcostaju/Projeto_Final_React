@@ -1,0 +1,47 @@
+.section {
+    background: rgba(0, 0, 0, 0.00);
+    padding: 4rem 1rem;
+    text-align: center;
+}
+
+.titulo {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 8rem;
+}
+
+.destaque {
+    color: #F44C34;
+}
+
+.cardsExperiencia {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    margin-bottom: 5rem;
+}
+
+.subtitulo {
+    color: #171717;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    margin-bottom: 2rem;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cardsAvaliacao {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}

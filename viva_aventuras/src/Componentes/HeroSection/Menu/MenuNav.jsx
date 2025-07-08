@@ -27,10 +27,10 @@ function MenuNav() {
 
         <nav className={`${styles.nav} ${menuAberto ? styles.aberto : ''}`}>
           <a href="#inicio" onClick={fecharMenu} >Início</a>
-          <a href="#servicos" onClick={fecharMenu}>Serviços</a>
-          <a href="#como-funciona" onClick={fecharMenu}>Como Funciona</a>
+          <a href="#nossasExp" onClick={fecharMenu}>Nossas Experiências</a>
+          <a href="#comoFunciona" onClick={fecharMenu}>Como Funciona</a>
           <a href="#experiencias" onClick={fecharMenu}>Experiências</a>
-          <a href="#autoridade" onClick={fecharMenu}>Autoridade</a>
+          <a href="#autoridade" onClick={fecharMenu}>Quem somos</a>
           <a href="#galeria" onClick={fecharMenu}>Galeria</a>
           <a href="#contato" onClick={fecharMenu}>Contato</a>
           <a href="#duvidas" onClick={fecharMenu}>Dúvidas</a>

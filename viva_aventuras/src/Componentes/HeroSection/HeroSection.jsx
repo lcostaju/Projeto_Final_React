@@ -11,6 +11,7 @@ function HeroSection() {
                             CANASTRA<br />
                             <span className={styles.viva}>VIVA</span> ESSA<br />
                             <span className={styles.aventuraNas}>AVENTURA NAS</span>
+                            
                         </h1>
                     </div>
                     <span className={styles.alturas}>ALTURAS</span>

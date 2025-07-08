@@ -6,6 +6,7 @@ import FormSection from "./Formulario/FormSection";
 import ComoFuncionaSection from "./ComoFunciona/ComoFuncionaSection";
 import ExperienciasProporcionadasSection from "./ExperienciasProporcionadas/ExperienciasProporcionadasSection";
 import Whatsapp from "../Tools/Whatsapp";
+import QuemSomos from "./QuemSomos/QuemSomos";
 
 
 function Main(){
@@ -16,6 +17,7 @@ function Main(){
         <NossasExperiencias/>
         <ComoFuncionaSection/>
         <ExperienciasProporcionadasSection/>
+        <QuemSomos/>
         <FormSection />
         </main>
     )

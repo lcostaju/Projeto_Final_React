@@ -1,6 +1,13 @@
 import styles from './HeroSection.module.css';
 
 function HeroSection() {
+    const scrollToForm = () => {
+        const formSection = document.getElementById('contato');
+        if (formSection) {
+            formSection.scrollIntoView({ behavior: 'smooth' });
+        }
+    };
+
     return (
         <section className={styles.hero}>
             <div className={styles['hero-content']}>
@@ -23,7 +30,7 @@ function HeroSection() {
                         pessoas e viva experiências inesquecíveis<br />
                         na Serra da Canastra.
                     </p>
-                    <button className={styles.ctaBtn}>
+                    <button className={styles.ctaBtn} onClick={scrollToForm}>
                         Quero conhecer
                         <img src="/iconButtonHero.svg" alt="Ícone aventura" />
                     </button>

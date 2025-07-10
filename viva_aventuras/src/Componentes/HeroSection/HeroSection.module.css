@@ -86,7 +86,7 @@
     padding: 15px 22.245px 16px 69px;
     justify-content: flex-end;
     align-items: flex-start;
-    gap: 32px;
+    gap: 25px;
     flex-shrink: 0;
     border-radius: 8px;
     border: 0px solid #E5E7EB;
@@ -96,12 +96,24 @@
     color: #FFF;
     font-size: 18px;
     font-weight: 700;
+    transition: all 0.3s ease;
+    cursor: pointer;
 
+}
+
+.ctaBtn:hover{
+    opacity: 0.8;
+}
+
+.ctaBtn:hover img {
+    transform: translateX(10px);
+    transition: transform 0.3s;
 }
 
 .ctaBtn img {
     width: 20px;
     height: 20px;
+    transition: transform 0.3s;
 }
 
 .blocoTexto {

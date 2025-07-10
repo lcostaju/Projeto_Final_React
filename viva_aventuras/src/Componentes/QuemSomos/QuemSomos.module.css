@@ -132,8 +132,8 @@
     margin-top: 18px;
   }
   .quem-somos-img {
-    width: 98vw;
-    max-width: 98vw;
+    width: 95%;
+    /* max-width: 98vw; */
     margin: 0 auto;
   }
   .quem-somos-cards {

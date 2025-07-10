@@ -1,0 +1,32 @@
+[
+  {
+    "icon": "/icone/viajante.svg",
+    "pergunta": "Nunca fiz rapel. Tudo bem mesmo?",
+    "resposta": "Sim, a maioria dos nossos participantes também não havia feito!"
+  },
+  {
+    "icon": "/icone/coracao.svg",
+    "pergunta": "Qual a diferença entre turismo de aventura e esporte de aventura",
+    "resposta": "O turismo de aventura é lazer com emoção e segurança; o esporte de aventura é prática esportiva com técnica, desafio e preparo físico."
+  },
+  {
+    "icon": "/icone/triangulo-atencao.svg",
+    "pergunta": "E se eu travar lá em cima?",
+    "resposta": "Nosso time te apoia o tempo inteiro. Respira fundo, vai dar certo."
+  },
+  {
+    "icon": "/icone/grupo.svg",
+    "pergunta": "É só pra quem vai sozinho?",
+    "resposta": "Nada disso. Traga amigos, primos ou venha solo – todos são bem-vindos."
+  },
+  {
+    "icon": "/icone/capacete-seguranca.svg",
+    "pergunta": "E a segurança, como é?",
+    "resposta": "Usamos equipamentos certificados e guias especializados."
+  },
+  {
+    "icon": "/icone/sol-com-duvida.svg",
+    "pergunta": "Tenho medo de altura. Ainda assim posso tentar?",
+    "resposta": "Sim! Nosso time te apoia com calma e segurança em cada passo."
+  }
+]

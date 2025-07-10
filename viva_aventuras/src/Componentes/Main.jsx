@@ -15,14 +15,14 @@ function Main(){
 
     return(
         <main>
-        <Whatsapp/>
-        <NossasExperiencias/>
-        <ComoFuncionaSection/>
-        <ExperienciasProporcionadasSection/>
-        <QuemSomos/>
-        <Galeria/>
-        <FormSection />
-        <DuvidasFAQ/>
+            <Whatsapp/>
+            <NossasExperiencias/>
+            <ComoFuncionaSection/>
+            <ExperienciasProporcionadasSection/>
+            <QuemSomos/>
+            <Galeria/>
+            <FormSection />
+            <DuvidasFAQ/>
         </main>
     )
     

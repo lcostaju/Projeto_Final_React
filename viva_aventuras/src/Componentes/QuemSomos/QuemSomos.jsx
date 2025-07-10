@@ -3,7 +3,7 @@ import styles from './QuemSomos.module.css';
 
 function QuemSomos() {
   return (
-    <section className={styles['quem-somos-section']}>
+    <section className={styles['quem-somos-section']} id="autoridade">
       <h1 className={styles['quem-somos-title']}>Quem Somos</h1>
       <div className={styles['quem-somos-main']}>
         <img

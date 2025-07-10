@@ -24,7 +24,7 @@ function DuvidasFAQ() {
   }, []);
 
   return (
-    <section className={styles.faqSection} id="faq">
+    <section className={styles.faqSection} id="duvidas">
       <h2 className={styles.faqTitulo}>Dúvidas antes de se lançar?</h2>
       <p className={styles.faqDescricao}>A gente responde tudo pra você se sentir seguro (e animado).</p>
       {loading && <div>Carregando...</div>}

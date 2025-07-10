@@ -32,14 +32,6 @@ function Formulario() {
     setErrors({ ...errors, [e.target.name]: undefined });
   };
 
-  // Valida o e-mail ao sair do campo
-  const handleEmailBlur = (e) => {
-    const email = e.target.value;
-    if (!/^[\w-.]+@([\w-]+\.)+[a-zA-Z]{2,}$/.test(email)) {
-      setErrors((prev) => ({ ...prev, email: 'E-mail inválido.' }));
-    }
-  };
-
   const handleSubmit = (e) => {
     e.preventDefault();
     setFeedback({ type: '', message: '' });
@@ -108,7 +100,6 @@ function Formulario() {
         placeholder="seu@email.com"
         value={form.email}
         onChange={handleChange}
-        onBlur={handleEmailBlur}
         required
         maxLength={100}
         style={errors.email ? { borderColor: '#F44C34' } : {}}

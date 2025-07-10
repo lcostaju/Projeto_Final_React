@@ -10,8 +10,9 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
   position: sticky;
   top: 0;
-  z-index: 100;
+  z-index: 999 !important;
   width: 100%;
+  transition: none;
 }
 
 .header-container {
@@ -90,6 +91,15 @@
   align-items: center;
   gap: 0.075rem;
   white-space: nowrap;
+}
+
+.escondido {
+  /* Remove qualquer ocultação do menu */
+  top: 0 !important;
+  display: block !important;
+  opacity: 1 !important;
+  pointer-events: all !important;
+  transition: none !important;
 }
 
 

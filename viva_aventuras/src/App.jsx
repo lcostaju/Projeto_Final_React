@@ -1,5 +1,5 @@
 import Footer from "./Componentes/Footer"
-import Header from "./Componentes/Header"
+import MenuNav from "./Componentes/HeroSection/Menu/MenuNav"
 import Main from "./Componentes/Main"
 import './App.css'
 
@@ -7,7 +7,7 @@ import './App.css'
 function App() {
   return(
     <>
-      <Header/>
+      <MenuNav/>
       <Main/>
       <Footer/>
     </>

@@ -25,7 +25,7 @@ function Footer() {
                             loading="lazy"
                             allowFullScreen
                             referrerPolicy="no-referrer-when-downgrade"
-                            iframe />
+                            />
                         <p>
                             As atividades acontecem em meio à natureza, Serra da Canastra, MG.
                         </p>

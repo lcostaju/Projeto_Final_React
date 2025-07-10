@@ -8,6 +8,7 @@ import ExperienciasProporcionadasSection from "./ExperienciasProporcionadas/Expe
 import Whatsapp from "../Tools/Whatsapp";
 import QuemSomos from "./QuemSomos/QuemSomos";
 import Galeria from "./Galeria/Galeria";
+import DuvidasFAQ from "./DuvidasFAQ/DuvidasFAQ";
 
 
 function Main(){
@@ -21,6 +22,7 @@ function Main(){
         <QuemSomos/>
         <Galeria/>
         <FormSection />
+        <DuvidasFAQ/>
         </main>
     )
     

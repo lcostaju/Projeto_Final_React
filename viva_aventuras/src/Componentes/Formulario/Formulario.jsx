@@ -4,10 +4,12 @@ import styles from './FormSection.module.css';
 
 
 
+
 function Formulario() {
   const [form, setForm] = useState({ name: '', email: '', message: '' });
   const [errors, setErrors] = useState({});
   const [sending, setSending] = useState(false);
+  const [feedback, setFeedback] = useState({ type: '', message: '' });
 
   const validate = () => {
     const newErrors = {};
@@ -16,7 +18,7 @@ function Formulario() {
     }
     if (!form.email) {
       newErrors.email = 'Digite seu e-mail.';
-    } else if (!/^[\w-.]+@([\w-]+\.)+[\w-]{2,}$/.test(form.email)) {
+        } else if (!/^[\w-.]+@([\w-]+\.)+[a-zA-Z]{2,}$/.test(form.email)) {
       newErrors.email = 'E-mail inválido.';
     }
     if (!form.message || form.message.trim().length < 10) {
@@ -32,6 +34,7 @@ function Formulario() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    setFeedback({ type: '', message: '' });
     const validationErrors = validate();
     if (Object.keys(validationErrors).length > 0) {
       setErrors(validationErrors);
@@ -40,17 +43,40 @@ function Formulario() {
     setSending(true);
     emailjs.sendForm('service_edqh72a', 'template_fltm1jl', e.target, 'IN3q3laY6zJFJG4LT')
       .then(() => {
-        alert('Mensagem enviada com sucesso!');
+        setFeedback({ type: 'success', message: 'Mensagem enviada com sucesso!' });
         setForm({ name: '', email: '', message: '' });
         setSending(false);
+        setTimeout(() => {
+          setFeedback({ type: '', message: '' });
+        }, 4000);
       }, (error) => {
-        alert('Erro ao enviar: ' + error.text);
+        setFeedback({ type: 'error', message: 'Ocorreu um erro ao enviar sua mensagem. Por favor, tente novamente mais tarde.' });
         setSending(false);
+        setTimeout(() => {
+          setFeedback({ type: '', message: '' });
+        }, 5000);
       });
   };
 
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
+      {feedback.message && (
+        <div
+          style={{
+            background: feedback.type === 'success' ? '#F44C34' : '#ffeaea',
+            color: feedback.type === 'success' ? '#E5E7EB' : '#d32f2f',
+            border: `1.5px solid ${feedback.type === 'success' ? '#E5E7EB' : '#d32f2f'}`,
+            borderRadius: 8,
+            padding: '12px 18px',
+            marginBottom: 16,
+            textAlign: 'center',
+            fontWeight: 600,
+            fontSize: '1rem'
+          }}
+        >
+          {feedback.message}
+        </div>
+      )}
       <label htmlFor="name">Nome</label>
       <input
         type="text"
@@ -101,5 +127,4 @@ function Formulario() {
     </form>
   );
 }
-
 export default Formulario;

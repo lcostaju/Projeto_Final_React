@@ -8,6 +8,7 @@ import ExperienciasProporcionadasSection from "./ExperienciasProporcionadas/Expe
 import Whatsapp from "../Tools/Whatsapp";
 import QuemSomos from "./QuemSomos/QuemSomos";
 import Galeria from "./Galeria/Galeria";
+import HeroSection from "./HeroSection/HeroSection";
 
 
 function Main(){
@@ -15,6 +16,7 @@ function Main(){
     return(
         <main>
         <Whatsapp/>
+        <HeroSection/>
         <NossasExperiencias/>
         <ComoFuncionaSection/>
         <ExperienciasProporcionadasSection/>

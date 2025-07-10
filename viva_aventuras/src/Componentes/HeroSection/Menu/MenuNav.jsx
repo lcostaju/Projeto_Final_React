@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import styles from './MenuNav.module.css';
-import { FaBars, FaTimes } from 'react-icons/fa'; // Ícones do hambúrguer
+import { FaBars, FaTimes } from 'react-icons/fa';
 
 function MenuNav() {
   const [menuAberto, setMenuAberto] = useState(false);
@@ -14,17 +14,14 @@ function MenuNav() {
   };
 
   return (
-    <header className={styles.header}>
+    <header className={styles.header} id="inicio">
       <div className={styles['header-container']}>
         <div className={styles.logo}>
           <img src="/navLogoNew.png" alt="Viva Aventuras" />
-        
         </div>
-
         <button className={styles.menuToggle} onClick={toggleMenu}>
           {menuAberto ? <FaTimes /> : <FaBars />}
         </button>
-
         <nav className={`${styles.nav} ${menuAberto ? styles.aberto : ''}`}>
           <a href="#inicio" onClick={fecharMenu} >Início</a>
           <a href="#nossasExp" onClick={fecharMenu}>Nossas Experiências</a>

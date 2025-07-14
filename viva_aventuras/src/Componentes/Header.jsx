@@ -5,7 +5,6 @@ function Header(){
     return(
         <header>
             <MenuNav/>
-            <HeroSection/>
         </header>
     )
 }

@@ -7,7 +7,9 @@
     font-family: "Inter", sans-serif;
 }
 
-
+html {
+    scroll-behavior: smooth;
+}
 
 section>div {
     max-width: var(--largura-maxima-secao);

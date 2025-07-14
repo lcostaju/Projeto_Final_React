@@ -4,7 +4,7 @@ import MontainSection from './MontainSection/MontainSection';
 function Footer() {
     return (
         <footer>
-            <MontainSection />
+            {/* <MontainSection /> */}
             <section className={style.classFooter}>
                 <div className={style.container}>
                     {/* Coluna 1: Logo + redes sociais */}

@@ -11,16 +11,19 @@ function QuemSomos() {
           alt="Equipe Viva Aventuras"
           className={styles['quem-somos-img']}
         />
-        <p className={styles['quem-somos-desc']}>
-            Viva Aventuras é uma operadora de ecoturismo especializada em turismo de aventura
-            com base na segurança, sustentabilidade e inclusão das mulheres no Turismo de Aventuras
-            e ao esporte atraves dos curso de Rapel. Fundada em 2019 ,opera na região do Triângulo Mineiro e Canastra. Nestes 6 anos realizou vários curso de Rapel esportivo e desde de 2023 oferece tambem Cursos profissionais como Trabalho em Altura conforme Nr35. Tornando 
-            profissionais com alto padrão técnico e também realizamos Consultoria e treinamentos profissionais
-            pecializados para empresas no setor de Limpeza e Conservação.
-            Nosso impacto vai além da adrenalina: preservamos o meio ambiente, promovemos o
-            desenvolvimento comunitário e criamos experiências que unem corpo, mente e espírito.
-            Mais que aventura A Viva é conexão, consciência e transformação.
-        </p>
+        <div className={styles['quem-somos-desc']}>
+          <p><strong>Viva Aventuras</strong> é uma operadora de ecoturismo especializada em turismo de aventura com base na <strong>segurança</strong>, <strong>sustentabilidade</strong> e <strong>inclusão das mulheres</strong> no Turismo de Aventuras e ao esporte através dos cursos de Rapel.</p>
+          <p>Fundada em 2019, opera na região do <strong>Triângulo Mineiro</strong> e <strong>Canastra</strong>.</p>
+          <p>Nestes 6 anos realizou vários cursos de Rapel esportivo e, desde 2023, oferece também <strong>Cursos Profissionais</strong> como Trabalho em Altura conforme NR35, tornando profissionais com alto padrão técnico.</p>
+          <p>Também realizamos <strong>consultoria</strong> e <strong>treinamentos profissionais</strong> especializados para empresas no setor de Limpeza e Conservação.</p>
+          <p>Nosso impacto vai além da adrenalina:</p>
+          <ul>
+            <li>Preservamos o meio ambiente</li>
+            <li>Promovemos o desenvolvimento comunitário</li>
+            <li>Criamos experiências que unem corpo, mente e espírito</li>
+          </ul>
+          <p><strong>Mais que aventura:</strong> a Viva é <strong>conexão</strong>, <strong>consciência</strong> e <strong>transformação</strong>.</p>
+        </div>
       </div>
       <h2 className={styles['quem-somos-cert-title']}>Nossas Certificações</h2>
       <div className={styles['quem-somos-cards']}>

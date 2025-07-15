@@ -26,6 +26,7 @@ function Main(){
             <Galeria/>
             <FormSection />
             <DuvidasFAQ/>
+            <MontainSection/>
         </main>
     )
     

@@ -9,7 +9,7 @@ function HeroSection() {
     };
 
     return (
-        <section className={styles.hero}>
+        <section className={styles.hero} id = 'inicio'>
             <div className={styles['hero-content']}>
                 <div className={styles.blocoTexto}>
                     <div className={styles.textos}>

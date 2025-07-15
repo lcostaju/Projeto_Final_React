@@ -1,9 +1,27 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import styles from './MenuNav.module.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 
 function MenuNav() {
   const [menuAberto, setMenuAberto] = useState(false);
+  const [visivel, setVisivel] = useState(true);
+  const lastScrollY = useRef(window.scrollY);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
+      if (currentScrollY <= 0) {
+        setVisivel(true);
+      } else if (currentScrollY > lastScrollY.current) {
+        setVisivel(false); // rolando para baixo
+      } else {
+        setVisivel(true); // rolando para cima
+      }
+      lastScrollY.current = currentScrollY;
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setMenuAberto(!menuAberto);
@@ -14,7 +32,7 @@ function MenuNav() {
   };
 
   return (
-    <header className={styles.header} id="inicio">
+    <header className={`${styles.header} ${visivel ? '' : styles.oculto}`}>
       <div className={styles['header-container']}>
         <div className={styles.logo}>
           <img src="/navLogoNew.png" alt="Viva Aventuras" />
@@ -23,7 +41,7 @@ function MenuNav() {
           {menuAberto ? <FaTimes /> : <FaBars />}
         </button>
         <nav className={`${styles.nav} ${menuAberto ? styles.aberto : ''}`}>
-          <a href="#inicio" onClick={fecharMenu} >Início</a>
+          <a href="/" onClick={fecharMenu} >Início</a>
           <a href="#nossasExp" onClick={fecharMenu}>Nossas Experiências</a>
           <a href="#comoFunciona" onClick={fecharMenu}>Como Funciona</a>
           <a href="#experiencias" onClick={fecharMenu}>Experiências</a>

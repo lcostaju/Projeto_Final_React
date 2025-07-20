@@ -11,8 +11,10 @@ function Footer() {
                     <div className={style.coluna}>
                         <img src="/icon-white.png" alt="Viva Aventuras" className={style.logo} />
                         <div className={style.redes}>
-                            <img src="/insta-icon.png" alt="Instagram" />
-                            <img src="/face-icon.png" alt="Facebook" />
+                            <a href="https://www.instagram.com/viva_aventuras/" target="_blank" rel="noopener noreferrer">
+                                <img src="/insta-icon.png" alt="Instagram" />
+                            </a>
+                            {/* <img src="/face-icon.png" alt="Facebook" /> */}
                         </div>
                     </div>
 

@@ -57,7 +57,7 @@ function ComoFuncionaSection() {
             </li>
             <li>
               <img src="/icon-card.png" alt="" />
-              <p>Pagamento facilitado: cartões, PIX, boleto bancário</p>
+              <p>Pagamento facilitado: cartões, PIX e boleto bancário</p>
             </li>
           </ul>
         </div>

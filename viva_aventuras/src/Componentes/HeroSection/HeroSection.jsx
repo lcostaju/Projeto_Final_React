@@ -22,8 +22,10 @@ function HeroSection() {
                             
                         </h1>
                     </div>
-                    <span className={styles.alturas}>ALTURAS</span>
-                    <Animacao css_identifier={`.${styles.blocoTexto}`} type="slideTop"/>
+                    <span className={styles.alturas}>ALTURAS
+                        <Animacao css_identifier={`.${styles.alturas}`} type="slideTop"/>
+                    </span>
+                    
                 </div>
 
                 <div className={styles.ctaBox}>
@@ -36,6 +38,7 @@ function HeroSection() {
                         Quero conhecer
                         <img src="/iconButtonHero.svg" alt="Ícone aventura" />
                     </button>
+                <Animacao css_identifier={`.${styles.ctaBox}`} type="slideTopDelay"/>
                 </div>
             </div>
         </section>

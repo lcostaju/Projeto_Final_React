@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './QuemSomos.module.css';
+import Animacao from '../../Tools/Animacao';
 
 function QuemSomos() {
   return (
@@ -31,21 +32,25 @@ function QuemSomos() {
           <img src="/icone/certificacao.svg" alt="IRATA Internacional" className={styles['quem-somos-icon']} />
           <h3>IRATA Internacional</h3>
           <p>Certificação internacional para trabalhos em altura e acesso por cordas</p>
+          <Animacao css_identifier={`.${styles['quem-somos-card']}`} type="slideLeft"/>
         </div>
         <div className={styles['quem-somos-card']}>
           <img src="/icone/tecnico.svg" alt="Técnico de Segurança" className={styles['quem-somos-icon']} />
           <h3>Técnico de Segurança</h3>
           <p>Associação Brasileira das Empresas de Ecoturismo e Turismo de Aventura</p>
+          <Animacao css_identifier={`.${styles['quem-somos-card']}`} type="slideLeft"/>
         </div>
         <div className={styles['quem-somos-card']}>
           <img src="/icone/cadastrotur.svg" alt="Cadastur" className={styles['quem-somos-icon']} />
           <h3>Cadastur</h3>
           <p>Certificação de Prestadores de Serviços Turísticos</p>
+          <Animacao css_identifier={`.${styles['quem-somos-card']}`} type="slideLeft"/>
         </div>
         <div className={styles['quem-somos-card']}>
           <img src="/icone/ministeriotrabalho.svg" alt="Ministério do Trabalho" className={styles['quem-somos-icon']} />
           <h3>Ministério do Trabalho</h3>
           <p>Certificação da NR-35 para trabalho em altura</p>
+          <Animacao css_identifier={`.${styles['quem-somos-card']}`} type="slideLeft"/>
         </div>
       </div>
     </section>

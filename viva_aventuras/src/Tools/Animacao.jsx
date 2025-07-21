@@ -3,10 +3,12 @@ import ScrollReveal from 'scrollreveal';
 
 const animations = {
     scale: { duration: 700, scale: 0.1, easing: 'ease-in', reset: true },
-    fade: { duration: 700, opacity: 0, easing: 'ease-in', reset: true },
+    fade: { duration: 700, opacity: 0, easing: 'ease-in', reset: false },
     slideLeft: { duration: 700, distance: '100px', origin: 'left', easing: 'ease-in', reset: false },
-    slideRight: { duration: 700, distance: '100px', origin: 'right', easing: 'ease-in', reset: true },
+    slideRight: { duration: 700, distance: '100px', origin: 'right', easing: 'ease-in', reset: false },
+    slideDelayRight: { duration: 600, distance: '100px', origin: 'right', easing: 'ease-in', reset: false ,delay: 700},
     slideTop: { duration: 700, distance: '100px', origin: 'top', easing: 'ease-in', reset: false },
+    slideTopDelay: { duration: 500, distance: '100px', origin: 'top', easing: 'ease-in', reset: false,delay: 600 }
     // Adicione outras animações conforme necessário
 };
 

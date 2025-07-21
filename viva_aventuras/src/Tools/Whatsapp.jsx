@@ -11,7 +11,7 @@ export default function Whatsapp() {
       placeholder="Digite a sua mensagem"
       allowClickAway={true}
       allowEsc={true}
-      avatar="/navLogoNew.png"
+      avatar="/wppProfile.jpg"
     />
   );
 }

@@ -1,3 +1,4 @@
+import Animacao from '../../Tools/Animacao';
 import styles from './HeroSection.module.css';
 
 function HeroSection() {
@@ -22,6 +23,7 @@ function HeroSection() {
                         </h1>
                     </div>
                     <span className={styles.alturas}>ALTURAS</span>
+                    <Animacao css_identifier={`.${styles.blocoTexto}`} type="slideTop"/>
                 </div>
 
                 <div className={styles.ctaBox}>

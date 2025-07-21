@@ -1,3 +1,4 @@
+import Animacao from '../../Tools/Animacao';
 import style from './CardExperiencias.module.css';
 
 function CardExperiencias({ card }) {
@@ -8,6 +9,7 @@ function CardExperiencias({ card }) {
                     <div><img src={item.icon} alt={item.titulo} /></div>
                     <h3>{item.titulo}</h3>
                     <p>{item.texto}</p>
+                    <Animacao css_identifier={`.${style.cardExperiencias}`} type="slideLeft"/>
                 </div>
             ))}
             </>
